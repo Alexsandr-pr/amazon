@@ -49,6 +49,35 @@
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.ttf?xh51zn") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ChevronRight::before {
+  content: "\e900";
+}
+
+.icon-keyboard-right-arrow-button::before {
+  content: "\e901";
+}
+
 [data-spollers-content] {
   transition: all 0.3s ease 0s;
   height: 0;
@@ -1004,6 +1033,8 @@
 }
 
 .button__get {
+  position: relative;
+  z-index: 10;
   display: inline-flex;
   padding: 17px 50px;
   gap: 20px;
@@ -3252,31 +3283,18 @@ button.swiper-pagination-bullet {
 }
 
 .buttons-block__button {
-  padding: 10px;
+  padding: 10px 0px 12px 0px;
   gap: 10px;
   display: flex;
+  position: relative;
   border-radius: 5px;
   border: 2px solid #EB6108;
   justify-content: center;
   color: #EB6108;
-  font-size: 18px;
+  align-items: center;
+  transition: all 0.3s ease 0s;
   font-weight: 500;
-}
-.buttons-block__button span {
-  display: inline-block;
-  height: 19px;
-}
-@media (max-width: 487.98px) {
-  .buttons-block__button span svg {
-    height: 13px;
-    width: 13px;
-  }
-}
-@media (max-width: 487.98px) {
-  .buttons-block__button span {
-    height: 13px;
-    margin-top: 2px;
-  }
+  font-size: 18px;
 }
 @media (max-width: 991.98px) {
   .buttons-block__button {
@@ -3291,6 +3309,38 @@ button.swiper-pagination-bullet {
 @media (max-width: 377.98px) {
   .buttons-block__button {
     font-size: 14px;
+  }
+}
+.buttons-block__button p::before {
+  color: #EB6108;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  margin-top: 2px;
+}
+@media (max-width: 991.98px) {
+  .buttons-block__button p::before {
+    right: -15px;
+  }
+}
+.buttons-block__button p, .buttons-block__button span {
+  position: relative;
+}
+@media (hover: hover) {
+  .buttons-block__button:hover {
+    cursor: pointer;
+    color: #FBFFFE;
+    background-color: #EB5F07;
+  }
+  .buttons-block__button:hover p::before {
+    color: #FBFFFE !important;
+  }
+}
+@media (max-width: 487.98px) {
+  .buttons-block__button p::before {
+    display: none;
   }
 }
 
@@ -3792,18 +3842,19 @@ button.swiper-pagination-bullet {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  background: linear-gradient(180deg, #ED7212 0%, #EB5F07 99.95%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease 0s;
+  color: #EB5F07;
 }
 .filter-button__button._active {
   color: #FBFFFE;
-  background-clip: inherit;
-  -webkit-background-clip: inherit;
-  -webkit-text-fill-color: inherit;
-  border-radius: 5px;
-  background: linear-gradient(180deg, #ED7212 0%, #EB5F07 99.95%), #FBFFFE;
+  background-color: #EB5F07;
+}
+@media (hover: hover) {
+  .filter-button__button:hover {
+    cursor: pointer;
+    color: #FBFFFE;
+    background-color: #EB5F07;
+  }
 }
 
 /************************************/
@@ -3950,37 +4001,17 @@ button.swiper-pagination-bullet {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 42px;
+  height: 42px;
   border-radius: 5px;
   border: 2px solid #FD8D2A;
   transition: all 0.3s ease 0s;
-}
-.pagination__button path {
-  transition: all 0.3s ease 0s;
+  color: #EB5F07;
 }
 @media (hover: hover) {
   .pagination__button:hover {
+    color: #fff !important;
     background-color: #EB5F07;
-  }
-  .pagination__button:hover path {
-    fill: #fff !important;
-  }
-}
-@media (max-width: 991.98px) {
-  .pagination__button {
-    width: 50px;
-    height: 50px;
-  }
-  .pagination__button svg {
-    height: 18px !important;
-    width: 18px !important;
-  }
-}
-@media (max-width: 767.98px) {
-  .pagination__button {
-    width: 40px;
-    height: 40px;
   }
 }
 @media (max-width: 487.98px) {
@@ -3996,38 +4027,27 @@ button.swiper-pagination-bullet {
 }
 .pagination-numbers__link {
   font-size: 24px;
-  width: 60px;
-  height: 60px;
+  width: 42px;
+  height: 42px;
   border-radius: 5px;
+  color: #EB5F07;
   border: 2px solid #FD8D2A;
-  background: linear-gradient(180deg, #ED7212 0%, #EB5F07 99.95%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   transition: all 0.3s ease 0s;
 }
 @media (hover: hover) {
   .pagination-numbers__link:hover {
     color: #FBFFFE;
-    background-clip: inherit;
-    -webkit-background-clip: inherit;
-    -webkit-text-fill-color: inherit;
-    border-radius: 5px;
-    background: linear-gradient(180deg, #ED7212 0%, #EB5F07 99.95%), #FBFFFE;
+    background-color: #EB5F07;
   }
 }
 @media (max-width: 991.98px) {
   .pagination-numbers__link {
-    width: 50px;
-    height: 50px;
     font-size: 22px;
   }
 }
 @media (max-width: 767.98px) {
   .pagination-numbers__link {
-    width: 40px;
     font-size: 20px;
-    height: 40px;
   }
 }
 @media (max-width: 487.98px) {
@@ -4037,7 +4057,59 @@ button.swiper-pagination-bullet {
     font-size: 18px;
   }
 }
+.pagination-numbers__link._active {
+  color: #FBFFFE;
+  background-color: #EB5F07;
+}
 
+.pagination__button-left::before {
+  transform: rotate(180deg);
+}
+
+.anim-bottom {
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+  transform: translateY(100%);
+}
+
+.anim-bottom._active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.anim-left {
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+  transform: translateX(-100%);
+}
+
+.anim-left._start-anim {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.anim-right {
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+  transform: translateX(100%);
+}
+
+.anim-right._active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.text-anim._start-anim .splitting .char {
+  animation: slide-in 0.35s cubic-bezier(0.5, 0, 0.5, 1) both;
+  animation-delay: calc(0.3s + 100ms * var(--char-index));
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(3em) translateY(1.5em) rotate(135deg) scale(0.5);
+    opacity: 0;
+  }
+}
 *,
 *::before,
 *::after {
