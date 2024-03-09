@@ -54,7 +54,7 @@
   font-family: "Futura PT Book";
   src: url("FuturaPT-Book.eot");
   src: local("Futura PT Book"), local("FuturaPT-Book"), url("../fonts/FuturaPT-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Book.woff2") format("woff2"), url("../fonts/FuturaPT-Book.woff") format("woff"), url("../fonts/FuturaPT-Book.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -1070,6 +1070,11 @@
   border-bottom-left-radius: 50% 4%;
   border-bottom-right-radius: 50% 4%;
   background: #080626;
+}
+@media (max-width: 767.98px) {
+  .main-block {
+    margin-bottom: 20px;
+  }
 }
 .main-block__container {
   display: flex;
@@ -2974,6 +2979,166 @@ button.swiper-pagination-bullet {
   }
 }
 
+/***************SUPPLIERS********************/
+.benefit-world .benefit__container {
+  align-items: center;
+  gap: 108px;
+}
+@media (max-width: 991.98px) {
+  .benefit-world .benefit__container {
+    gap: 30px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767.98px) {
+  .benefit-world .benefit__container {
+    flex-direction: column;
+  }
+}
+.benefit-world .benefit__image {
+  flex: 0 1 36.75%; /* 441/1200 */
+}
+.benefit-world .benefit__image img {
+  max-width: 100%;
+}
+@media (max-width: 991.98px) {
+  .benefit-world .benefit__image {
+    flex: 0 1 42%;
+  }
+}
+.benefit-world .benefit__title {
+  text-align: left;
+}
+@media (max-width: 487.98px) {
+  .benefit-world .benefit__title {
+    text-align: center;
+  }
+}
+.benefit-world .benefit__body {
+  flex: 0 1 52.25%; /* 627/1200 */
+}
+.benefit-world .benefit__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 487.98px) {
+  .benefit-world .benefit__text {
+    gap: 15px;
+  }
+}
+
+.benefit-types .benefit__header .benefit__text {
+  color: #889196;
+}
+.benefit-types .benefit__container {
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 991.98px) {
+  .benefit-types .benefit__container {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767.98px) {
+  .benefit-types .benefit__container {
+    gap: 50px;
+    flex-direction: column-reverse;
+  }
+}
+.benefit-types .benefit__image {
+  flex: 0 1 45.583333%; /* 547/1200 */
+}
+.benefit-types .benefit__image img {
+  max-width: 100%;
+}
+@media (max-width: 767.98px) {
+  .benefit-types .benefit__title {
+    text-align: left;
+  }
+}
+.benefit-types .benefit__body {
+  flex: 0 1 58.333333%; /* 700/1200 */
+}
+.benefit-types .benefit__text {
+  line-height: 1.35;
+  text-align: left;
+  font-family: "Futura PT Book" !important;
+}
+
+.benefit-types__decor {
+  left: -10%;
+  position: absolute;
+}
+@media (min-width: 767.98px) {
+  .benefit-types__decor {
+    top: 0;
+  }
+  .benefit-types__decor img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) and (min-width: 550.98px) {
+  .benefit-types__decor {
+    width: 100%;
+    height: 100%;
+  }
+  .benefit-types__decor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 767.98px) {
+  .benefit-types__decor {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.benefit-supplier .benefit__container {
+  gap: 55px;
+}
+@media (min-width: 767.98px) {
+  .benefit-supplier .benefit__container {
+    align-items: center;
+  }
+}
+@media (max-width: 991.98px) {
+  .benefit-supplier .benefit__container {
+    gap: 35px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767.98px) {
+  .benefit-supplier .benefit__container {
+    flex-direction: column;
+  }
+}
+.benefit-supplier .benefit__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+.benefit-supplier .benefit__image {
+  flex: 0 1 38.75%; /* 465/1200 */
+}
+.benefit-supplier .benefit__image img {
+  max-width: 100%;
+}
+@media (max-width: 991.98px) {
+  .benefit-supplier .benefit__image {
+    flex: 0 1 42%;
+  }
+}
+@media (max-width: 767.98px) {
+  .benefit-supplier .benefit__title {
+    text-align: left;
+  }
+}
+.benefit-supplier .benefit__body {
+  flex: 0 1 49.416667%; /* 593/1200 */
+}
+
 .process {
   position: relative;
 }
@@ -3166,6 +3331,21 @@ button.swiper-pagination-bullet {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 991.98px) {
+  .request__text {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767.98px) {
+  .request__text {
+    font-size: 22px;
+  }
+}
+@media (max-width: 487.98px) {
+  .request__text {
+    font-size: 18px;
+  }
+}
 .request__form {
   max-width: 430px;
 }
@@ -3252,6 +3432,16 @@ button.swiper-pagination-bullet {
 @media (max-width: 991.98px) {
   .say__body {
     padding: 0px 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .say__body {
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 487.98px) {
+  .say__body {
+    padding: 0px;
   }
 }
 .say__title {
@@ -4967,6 +5157,108 @@ button.swiper-pagination-bullet {
   font-size: 21px;
   font-weight: 300;
   line-height: 135%; /* 28.35px */
+}
+@media (max-width: 991.98px) {
+  .can-item__list .content-list__item {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767.98px) {
+  .can-item__list .content-list__item {
+    font-size: 16px;
+  }
+}
+@media (max-width: 487.98px) {
+  .can-item__list .content-list__item {
+    font-size: 14px;
+  }
+}
+
+.title-blocks__items {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (max-width: 991.98px) {
+  .title-blocks__items {
+    gap: 35px;
+  }
+}
+@media (max-width: 767.98px) {
+  .title-blocks__items {
+    gap: 25px;
+  }
+}
+
+.title-block__title {
+  font-family: "Futura PT Book";
+}
+.title-block__title:not(:last-child) {
+  margin-bottom: 35px;
+}
+@media (max-width: 991.98px) {
+  .title-block__title:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 767.98px) {
+  .title-block__title:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.can-services .can__item {
+  padding: 0px;
+  align-items: center;
+}
+@media (min-width: 667.98px) {
+  .can-services .can__item {
+    flex-direction: row;
+  }
+}
+.can-services .can__item:nth-child(2) {
+  justify-content: space-between;
+}
+.can-services .can__item:nth-child(2) .can-item__body {
+  flex: 0 1 63.166667%; /* 626/1200 */
+}
+.can-services .can__item:nth-child(1) .can-item__body {
+  padding-left: 136px;
+  flex: 0 1 62.166667%; /* 626/1200 */
+}
+@media (max-width: 991.98px) {
+  .can-services .can__item:nth-child(1) .can-item__body {
+    padding-left: 0;
+  }
+}
+.can-services .can__item:nth-child(3) .can-item__body {
+  padding-left: 136px;
+  flex: 0 1 57.166667% !important; /* 626/1200 */
+}
+@media (max-width: 991.98px) {
+  .can-services .can__item:nth-child(3) .can-item__body {
+    padding-left: 0;
+  }
+}
+.can-services .can__item:nth-child(1) {
+  gap: 10px;
+}
+@media (max-width: 667.98px) {
+  .can-services .can__item:nth-child(1) {
+    gap: 40px;
+  }
+}
+.can-services .can-item__title {
+  margin-bottom: 35px;
+}
+@media (max-width: 991.98px) {
+  .can-services .can-item__title {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 767.98px) {
+  .can-services .can-item__title {
+    margin-bottom: 20px;
+  }
 }
 
 *,
