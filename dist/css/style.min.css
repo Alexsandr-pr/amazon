@@ -743,6 +743,7 @@
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid rgba(79, 95, 117, 0.6);
+    text-align: right;
   }
   .link-spoller__title {
     display: flex;
@@ -786,6 +787,33 @@
 @media (min-width: 991.98px) {
   .link-spoller__button {
     display: none;
+  }
+}
+@media (min-width: 991.98px) {
+  .block-fon {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .block-fon {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(79, 77, 107, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header._active .block-fon {
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
   }
 }
 .footer__body {
@@ -1024,7 +1052,7 @@
 
 .main-block {
   position: relative;
-  padding: 100px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
   border-bottom-left-radius: 50% 4%;
   border-bottom-right-radius: 50% 4%;
   background: #080626;
@@ -3787,6 +3815,7 @@ button.swiper-pagination-bullet {
     transform: translateY(70px);
   }
 }
+/***************************/
 .list-item__list {
   display: flex;
   flex-direction: column;
@@ -4582,6 +4611,142 @@ button.swiper-pagination-bullet {
   position: absolute;
 }
 
+.step-web .step__body {
+  display: flex;
+  justify-content: center;
+}
+.step-web .step__content {
+  flex: 0 1 70%;
+}
+.step-web .step__title {
+  text-align: center;
+  max-width: 100%;
+}
+
+.step-web__decor {
+  position: absolute;
+  top: -3%;
+  right: 18%;
+}
+@media (max-width: 1380.98px) {
+  .step-web__decor {
+    right: 5%;
+  }
+}
+@media (max-width: 991.98px) {
+  .step-web__decor {
+    right: 0;
+  }
+}
+
+.web-slider-port {
+  position: relative;
+}
+.web-slider-port__container {
+  max-width: 884px !important;
+}
+.web-slider-port__title {
+  text-align: center;
+}
+.web-slider-port__slide img {
+  max-width: 100%;
+}
+
+.web-slider-port__swiper-1 {
+  margin-bottom: 40px;
+}
+@media (max-width: 991.98px) {
+  .web-slider-port__swiper-1 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .web-slider-port__swiper-1 {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 487.98px) {
+  .web-slider-port__swiper-1 {
+    margin-bottom: 15px;
+  }
+}
+
+.web-slider-port__swiper-2 {
+  padding-bottom: 50px;
+}
+
+.web-slider-port__swiper .swiper-pagination-bullet {
+  border-radius: 1px !important;
+  width: 29px !important;
+  height: 6px !important;
+  background-color: transparent !important;
+  border: 1px solid #EB6108 !important;
+  border-radius: 2px;
+}
+.web-slider-port__swiper .swiper-pagination-bullet-active {
+  background-color: #EB6108 !important;
+}
+.web-slider-port__swiper .swiper-wrapper {
+  align-items: stretch;
+}
+.web-slider-port__swiper .swiper-slide {
+  height: auto;
+}
+.web-slider-port__swiper .swiper-pagination {
+  position: absolute;
+}
+
+.can {
+  position: relative;
+}
+.can__title {
+  text-align: center;
+}
+.can__items {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.can-item {
+  padding: 0px 40px;
+  gap: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.can-item__body {
+  flex: 0 1 38.333333%; /* 412/1200 */
+}
+.can-item__title {
+  color: #161920;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.35; /* 41.85px */
+  font-family: FuturaPT;
+  text-transform: capitalize;
+}
+.can-item__title:not(:last-child) {
+  margin-bottom: 30px;
+}
+.can-item__image {
+  flex: 0 1 53.333333%; /* 640/1200 */
+}
+.can-item__image img {
+  max-width: 100%;
+}
+
+.can-item__list {
+  gap: 15px !important;
+}
+.can-item__list .content-list__item {
+  color: #889196;
+  font-family: FuturaPT;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 135%; /* 28.35px */
+}
+
 *,
 *::before,
 *::after {
@@ -4625,7 +4790,7 @@ body {
   background: #FBFBFB;
   font-weight: 400;
   font-family: FuturaPT;
-  line-height: 135%; /* 21.6px */
+  line-height: 1.35; /* 21.6px */
 }
 
 button,
@@ -4657,8 +4822,13 @@ button {
 }
 
 .main {
-  margin-top: 87px;
+  margin-top: 79px;
   flex: 1 1 auto;
   position: relative;
   z-index: 3;
+}
+@media (max-width: 991.98px) {
+  .main {
+    margin-top: 70px;
+  }
 }
