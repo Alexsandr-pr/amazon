@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+	 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240310203716">
+	<title>Amazon Advertising</title>
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="header fix-offset">
+    <div class="header__container">
+        <a href="index.html" class="header__logo">
+            <picture>
+                <source media="(min-width: 767.98px)" srcset="img/logo/logo-desktop.png" type="image/png">
+                <img src="img/logo/logo-mobile.png" alt="logo">
+            </picture>
+        </a>
+        <nav class="header__menu menu">
+            <div class="block-fon"></div>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href='index.html' class="menu__link _active">Buy Account</a>
+                </li>
+                <li class="menu__item">
+                    <a href='sell-account.html' class="menu__link">Sell account</a>
+                </li>
+                <li class="menu__item menu__item-spoller">
+                    <button id="link-spoller" href='#' class="menu__link menu__link-spoller link-spoller">
+                        <p>Services</p>
+                        <svg class="link-spoller__svg" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 20" fill="none">
+                            <path d="M10.7138 15.2135L19.7047 6.21964C20.0983 5.825 20.0983 5.18561 19.7047 4.78996C19.311 4.39532 18.6716 4.39532 18.278 4.78996L10.0004 13.0705L1.72292 4.79096C1.32927 4.39631 0.689883 4.39631 0.295237 4.79096C-0.0984129 5.18561 -0.0984129 5.82599 0.295237 6.22064L9.28607 15.2145C9.67565 15.6031 10.3251 15.6031 10.7138 15.2135Z" fill="#889196"/>
+                        </svg>
+                    </button>
+                    <div class="link-spoller__body">
+                        <div class="link-spoller__list">
+                            <div class="link-spoller__title">
+                                <p>All services (17)</p>
+                                <button class="link-spoller__button icon-keyboard-right-arrow-button  _active"></button>
+                            </div>
+                            <ul class="link-spoller__items">
+                                <li class="link-spoller__item">
+                                    <a href="launch.html" class="link-spoller__link   hover-line">Complex launch</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="amazon-listing.html" class="link-spoller__link  hover-line">Amazon listing</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="#" class="link-spoller__link  hover-line">Shipping services</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="#" class="link-spoller__link  hover-line">UPCs</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="#" class="link-spoller__link  hover-line">Utility bills & invoices</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="web-sites.html" class="link-spoller__link  hover-line">Websites</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="#" class="link-spoller__link  hover-line">Private Label on Amazon</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="#" class="link-spoller__link  hover-line">Trademark</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="#" class="link-spoller__link  hover-line">Amazon branding</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="suppliers.html" class="link-spoller__link  hover-line">Suppliers</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="#" class="link-spoller__link  hover-line">Amazon reviews</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="#" class="link-spoller__link  hover-line">Categories & brands ungating service</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="company-usa.html" class="link-spoller__link  hover-line">Company registration in the USA</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="#" class="link-spoller__link  hover-line">Gift cards</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="amazon-account.html" class="link-spoller__link  hover-line">Amazon account unlock</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="#" class="link-spoller__link hover-line">ChatBot</a>
+                                </li>
+                                <li class="link-spoller__item">
+                                    <a href="amazon-advertising.html" class="link-spoller__link hover-line">Amazon advertising</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a href='blog.html' class="menu__link">Blog</a>
+                </li>
+                <li class="menu__item">
+                    <a href='#' class="menu__link">Search</a>
+                </li>
+            </ul>
+            <div class="header__menu-change menu-change">
+                <button class="menu-change__button _active">En</button>
+                <button class="menu-change__button">Ua</button>
+            </div>
+        </nav>
+        <div class="icon-menu">
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                <path
+                    class="line top"
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path
+                    class="line middle"
+                    d="m 30,50 h 40" />
+                <path
+                    class="line bottom"
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+        </div>
+    </div>
+</header>
+			<main class="main">
+				<!--<div class="block-loading"></div>-->
+				<section class="main__block main-block">
+					<div class="main-block__container">
+						<div class="main-block__body">
+							<div class="main-block__title title">
+								<h1>Amazon Advertising</h1>
+							</div>
+							<div class="main-block__text">
+								We offer ad solutions to help you find, attract, and engage millions of Amazon customers!
+							</div>
+							<div class="main-block__buttons">
+								<button data-go=".request"  class="button__get">
+									<span >
+										<svg class="button__get-span" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27ZM6.23244 12.2911C6.162 12.2902 6.09161 12.2954 6.02205 12.3067C5.35895 12.4143 4.9086 13.039 5.01613 13.7021C5.13286 14.3128 5.67801 14.7469 6.29937 14.7238H18.2438L17.8789 14.888C17.6544 15.0035 17.4492 15.1533 17.2708 15.332L13.9137 18.7012C13.4707 19.1241 13.3963 19.8043 13.7373 20.3129C13.7695 20.3548 13.8043 20.3947 13.8416 20.4321C14.316 20.9078 15.0861 20.9088 15.5618 20.4345L21.6435 14.3528L21.6445 14.3518C22.1192 13.8766 22.1188 13.1064 21.6435 12.6317L15.5618 6.54997C15.5227 6.51234 15.4811 6.47737 15.4373 6.44529C14.8953 6.04842 14.1342 6.1661 13.7373 6.7081C13.3963 7.21672 13.4707 7.89692 13.9137 8.31975L17.2769 11.6829C17.4759 11.8838 17.7085 12.0485 17.9641 12.1695L18.2256 12.2911H6.23244Z" fill="#FEFEFE"/>
+										</svg>
+									</span>
+									<p>GET STARTED</p>
+								</button>
+							</div>
+							<ul class="main-block__social social">
+								<li class="social__item">
+									<a href="#" class="social__link ">
+										<img loading="lazy"  src="img/icon/Facebook.svg" alt="facebook">
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link ">
+										<img loading="lazy"  src="img/icon/instagram.svg" alt="facebook">
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link ">
+										<img loading="lazy"  src="img/icon/linkedin.svg" alt="">
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link ">
+										<img loading="lazy"  src="img/icon/telegram.svg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="main-block__image">
+							<picture>
+								<source media="(min-width: 600.98px)" srcset="img/advertising/main-block/advertising-ds.png" type="image/png">
+								<img loading="lazy"  src="img/advertising/main-block/advertising-mb.png" alt="Main block  mocape">
+							</picture>
+						</div>
+					</div>
+				</section>
+				
+
+				
+				<section class="main__request request padd-top-bot">
+					<div class="request__image-fon">
+						<picture><source srcset="img/page1/request/bg.webp" type="image/webp"><img loading="lazy"  src="img/page1/request/bg.png" alt="background"></picture>
+					</div>
+					<div class="request__container">
+						<div class="request__image">
+							<picture>
+								<source media="(min-width: 767.98px)" srcset="img/advertising/req/image-ds.png" type="image/png">
+								<img loading="lazy"  src="img/advertising/req/image-mb.png" alt="image">
+							</picture>
+						</div>
+						<div class="request__content">
+							<div class="request__title title">
+								<h2>Get started</h2>
+							</div>
+							<div class="request__text text" >
+								<p>It will take you less than sixty seconds. A member 
+									of our team will contact you shortly after.</p>
+							</div>
+							<form class="request__form request-form">
+								<div class="request-form__item">
+									<label  class="request-form__label">Email Address*</label>
+									<input name="email" type="email" required class="request-form__input" placeholder="info@gmail.com">
+								</div>
+								<div class="request-form__item">
+									<label class="request-form__label">Telephone number</label>
+									<input name="tel" type="tel" class="request-form__input" placeholder="info@gmail.com">
+								</div>
+								<div class="request-form__item">
+									<label class="request-form__label">Your message</label>
+									<input name="message" type="text" class="request-form__input" placeholder="info@gmail.com">
+								</div>
+								<button class="request-form__button button__get">Send</button>
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__say say padd-top-bot">
+					<span class="block-bg"></span>
+					<div class="say__container">
+						<div class="say__body">
+							<div class="say__title title title-bot">
+								<h2>What our clients say</h2>
+							</div>
+							<div class="say__swiper swiper">
+								<div class="say__swiper-wrapper swiper-wrapper">
+									<div class="say__slide swiper-slide say-slide">
+										<div class="say-slide__image-person">
+											<picture><source srcset="img/icon/user/1.webp" type="image/webp"><img loading="lazy"  height="69" width="69" src="img/icon/user/1.jpg" alt="person"></picture>
+										</div>
+										<div class="say-slide__body">
+											<div class="say-slide__img">
+												<img loading="lazy"  src="img/icon/icon-slide.svg" alt="lapku">
+											</div>
+											<div class="say-slide__text text">
+												<p>I have to say, "amazmarkets" gets over an A+ rating from me. I will be recommending this company and team to everyone. Thanks again!</p>
+											</div>
+											<div class="say-slide__name">
+												<p>Steven Cody</p>
+											</div>
+										</div>
+									</div>
+									<div class="say__slide swiper-slide say-slide">
+										<div class="say-slide__image-person">
+											<picture><source srcset="img/icon/user/5.webp" type="image/webp"><img loading="lazy"  height="69" width="69" src="img/icon/user/5.jpg" alt="person"></picture>
+										</div>
+										<div class="say-slide__body">
+											<div class="say-slide__img">
+												<img loading="lazy"  src="img/icon/icon-slide.svg" alt="lapku">
+											</div>
+											<div class="say-slide__text text">
+												<p>Excellent and professional service. Very friendly and helpful. Would definitely use again. 
+													Highly recommend!</p>
+											</div>
+											<div class="say-slide__name">
+												<p>Jason Luis</p>
+											</div>
+										</div>
+									</div>
+									<div class="say__slide swiper-slide say-slide">
+										<div class="say-slide__image-person">
+											<picture><source srcset="img/icon/user/22.webp" type="image/webp"><img loading="lazy"  height="69" width="69" src="img/icon/user/22.jpg" alt="person"></picture>
+										</div>
+										<div class="say-slide__body">
+											<div class="say-slide__img">
+												<img loading="lazy"  src="img/icon/icon-slide.svg" alt="lapku">
+											</div>
+											<div class="say-slide__text text">
+												<p>Great communication, great price and great job! I would recommend this company to anyone who is willing to be successful on Amazon.</p>
+											</div>
+											<div class="say-slide__name">
+												<p>Matthew Jordan</p>
+											</div>
+										</div>
+									</div>
+									<div class="say__slide swiper-slide say-slide">
+										<div class="say-slide__image-person">
+											<picture><source srcset="img/icon/user/6.webp" type="image/webp"><img loading="lazy"  height="69" width="69" src="img/icon/user/6.jpg" alt="person"></picture>
+										</div>
+										<div class="say-slide__body">
+											<div class="say-slide__img">
+												<img loading="lazy"  src="img/icon/icon-slide.svg" alt="lapku">
+											</div>
+											<div class="say-slide__text text">
+												<p>I would absolutely recommend you to choose Amaz.markets if you need a fast and professional help to reinstate your amazon seller account.</p>
+											</div>
+											<div class="say-slide__name">
+												<p>David Chase</p>
+											</div>
+										</div>
+									</div>
+									<div class="say__slide swiper-slide say-slide">
+										<div class="say-slide__image-person">
+											<picture><source srcset="img/icon/user/2.webp" type="image/webp"><img loading="lazy"  height="69" width="69" src="img/icon/user/2.jpg" alt="person"></picture>
+										</div>
+										<div class="say-slide__body">
+											<div class="say-slide__img">
+												<img loading="lazy"  src="img/icon/icon-slide.svg" alt="lapku">
+											</div>
+											<div class="say-slide__text text">
+												<p>Thank you for providing high quality, affordable services. Professionalism, responsibility, and reliability of the guaranteed result.</p>
+											</div>
+											<div class="say-slide__name">
+												<p>Jayden Kevin</p>
+											</div>
+										</div>
+									</div>
+									<div class="say__slide swiper-slide say-slide">
+										<div class="say-slide__image-person">
+											<picture><source srcset="img/icon/user/3.webp" type="image/webp"><img loading="lazy"  height="69" width="69" src="img/icon/user/3.jpg" alt="person"></picture>
+										</div>
+										<div class="say-slide__body">
+											<div class="say-slide__img">
+												<img loading="lazy"  src="img/icon/icon-slide.svg" alt="lapku">
+											</div>
+											<div class="say-slide__text text">
+												<p>Positive experience and cool profit i got from this company. Looking forward to building our partnership in future.</p>
+											</div>
+											<div class="say-slide__name">
+												<p>Jesse Chase</p>
+											</div>
+										</div>
+									</div>
+									<div class="say__slide swiper-slide say-slide">
+										<div class="say-slide__image-person">
+											<picture><source srcset="img/icon/user/4.webp" type="image/webp"><img loading="lazy"  height="69" width="69" src="img/icon/user/4.jpg" alt="person"></picture>
+										</div>
+										<div class="say-slide__body">
+											<div class="say-slide__img">
+												<img loading="lazy"  src="img/icon/icon-slide.svg" alt="lapku">
+											</div>
+											<div class="say-slide__text text">
+												<p>The correctness and clarity of the actions of all the specialists of amazmarkets allowed us to improve our sales on Amazon.</p>
+											</div>
+											<div class="say-slide__name">
+												<p>Logan Diego</p>
+											</div>
+										</div>
+									</div>
+									<div class="say__slide swiper-slide say-slide">
+										<div class="say-slide__image-person">
+											<picture><source srcset="img/icon/user/19.webp" type="image/webp"><img loading="lazy"  height="69" width="69" src="img/icon/user/19.jpg" alt="person"></picture>
+										</div>
+										<div class="say-slide__body">
+											<div class="say-slide__img">
+												<img loading="lazy"  src="img/icon/icon-slide.svg" alt="lapku">
+											</div>
+											<div class="say-slide__text text">
+												<p>I'd like to say thanks to the design team for the quality work done on the photos for my product. Sales increased immediately. Well done!</p>
+											</div>
+											<div class="say-slide__name">
+												<p>Alex Aidan</p>
+											</div>
+										</div>
+									</div>
+									<div class="say__slide swiper-slide say-slide">
+										<div class="say-slide__image-person">
+											<picture><source srcset="img/icon/user/14.webp" type="image/webp"><img loading="lazy"  height="69" width="69" src="img/icon/user/14.jpg" alt="person"></picture>
+										</div>
+										<div class="say-slide__body">
+											<div class="say-slide__img">
+												<img loading="lazy"  src="img/icon/icon-slide.svg" alt="lapku">
+											</div>
+											<div class="say-slide__text text">
+												<p>Definitely recommend the whole Amazmarkets team. They have been a pleasure to work with. They are absolutely professional individuals.</p>
+											</div>
+											<div class="say-slide__name">
+												<p>Jake Adrian</p>
+											</div>
+										</div>
+									</div>
+									<div class="say__slide swiper-slide say-slide">
+										<div class="say-slide__image-person">
+											<picture><source srcset="img/icon/user/13.webp" type="image/webp"><img loading="lazy"  height="69" width="69" src="img/icon/user/13.jpg" alt="person"></picture>
+										</div>
+										<div class="say-slide__body">
+											<div class="say-slide__img">
+												<img loading="lazy"  src="img/icon/icon-slide.svg" alt="lapku">
+											</div>
+											<div class="say-slide__text text">
+												<p>I was pleasantly surprised. I asked them to launch my product. They did a great job! Will use again.</p>
+											</div>
+											<div class="say-slide__name">
+												<p>Brandon Bryant</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="say__pagination swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+                <section class="main__spoller main-spoller padd-top-bot">
+
+					<div class="spoller__usa-decor">
+						<picture><source srcset="img/company-usa/req/decor-left.webp" type="image/webp"><img src="img/company-usa/req/decor-left.png" alt="decor"></picture>
+					</div>
+					<div class="main-spoller__container">
+						<div class="main-spoller__title title">
+							<h2>FAQ</h2>
+						</div>
+						<div class="main-spoller__items spoller-block">
+							<span class="spoller-block__decor-right2">
+								<picture><source srcset="img/icon/Polygon145.webp" type="image/webp"><img loading="lazy"  src="img/icon/Polygon145.png" alt="decor"></picture>
+							</span>
+							<span class="spoller-block__decor-right3">
+								<picture><source srcset="img/icon/Polygon112.webp" type="image/webp"><img loading="lazy"  src="img/icon/Polygon112.png" alt="decor"></picture>
+							</span>
+							<span class="spoller-block__decor-left3">
+								<picture><source srcset="img/icon/Polygon145.webp" type="image/webp"><img loading="lazy"  src="img/icon/Polygon145.png" alt="decor"></picture>
+							</span>
+							<div data-spollers class="main-spoller__item spoller-block__item">
+								<div  data-spoller-trigger class="spoller-block__button">
+									<div class="spoller-block__header">
+										<div class="spoller-block__body">
+											<div class="spoller-block__title">
+												<h3>What is the minimum subscription period for our services?</h3>
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__arrow">
+										<picture><source srcset="img/icon/chevronBottom.webp" type="image/webp"><img loading="lazy"  src="img/icon/chevronBottom.png" alt="chevron bottom"></picture>
+									</div>
+								</div>
+								<div data-spollers-content class="spoller-block__content spoller-content">
+									<div class="spoller-content__text">
+                                        <p>One should not expect drastic changes and results from Amazon ads in a day: it is solely a gradual process with constant optimization and analysis. Thus, we request a minimum commitment of three months to identify all the market trends and discover new keywords for improved performance.
+                                        </p>
+                                      
+                                    </div>
+								</div>
+							</div>
+                            <div data-spollers class="main-spoller__item spoller-block__item">
+								<div  data-spoller-trigger class="spoller-block__button">
+									<div class="spoller-block__header">
+										<div class="spoller-block__body">
+											<div class="spoller-block__title">
+												<h3>What are the key metrics you consider?</h3>
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__arrow">
+										<picture><source srcset="img/icon/chevronBottom.webp" type="image/webp"><img loading="lazy"  src="img/icon/chevronBottom.png" alt="chevron bottom"></picture>
+									</div>
+								</div>
+								<div data-spollers-content class="spoller-block__content spoller-content">
+									<div class="spoller-content__text">
+                                        <p>Our goals are to bring down the ad spends, maximize ROI and sales. But the path to a low ACoS starts  with a hard-work:</p>
+                                        <ul class="spoller-content__list content-list">
+                                            <li class="content-list__item">
+                                                <p>To eliminate negative, repetitive keywords that are draining your money;</p>
+                                            </li>
+                                            <li class="content-list__item">
+                                                <p>To define different keyword match types and ensure relevancy within the customer search queries;</p>
+                                            </li>
+                                            <li class="content-list__item">
+                                                <p>To set default bid amount and daily budget;</p>
+                                            </li>
+                                            <li class="content-list__item">
+                                                <p>To ensure your listing quality and make sure it is optimized;</p>
+                                            </li>
+                                            <li class="content-list__item">
+                                                <p>To manage click-through-rate - a key indicator that tells us whether the ads are relevant.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+								</div>
+							</div>
+							<div data-spollers class="main-spoller__item spoller-block__item">
+								<div  data-spoller-trigger class="spoller-block__button">
+									<div class="spoller-block__header">
+										<div class="spoller-block__body">
+											<div class="spoller-block__title">
+												<h3>How you make the changes to ads?</h3>
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__arrow">
+										<picture><source srcset="img/icon/chevronBottom.webp" type="image/webp"><img loading="lazy"  src="img/icon/chevronBottom.png" alt="chevron bottom"></picture>
+									</div>
+								</div>
+								<div data-spollers-content class="spoller-block__content spoller-content">
+									<div class="spoller-content__text">
+                                        <p>We will make all the changes directly in your Amazon Seller Central account after you give us all  the necessary permissions and the account link.
+                                            These settings can be configured in your Seller Central account at any time and can be restricted only to the ‘Campaign Manager.’
+                                            Our actions are transparent  and you will be aware of all the steps.
+                                            </p>
+                                      
+                                    </div>
+								</div>
+							</div>
+                            <div data-spollers class="main-spoller__item spoller-block__item">
+								<div  data-spoller-trigger class="spoller-block__button">
+									<div class="spoller-block__header">
+										<div class="spoller-block__body">
+											<div class="spoller-block__title">
+												<h3>Why should I use PPC ads?</h3>
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__arrow">
+										<picture><source srcset="img/icon/chevronBottom.webp" type="image/webp"><img loading="lazy"  src="img/icon/chevronBottom.png" alt="chevron bottom"></picture>
+									</div>
+								</div>
+								<div data-spollers-content class="spoller-block__content spoller-content">
+									<div class="spoller-content__text">
+                                        <p>PPC ads will increase your traffic to boost your product visibility on Amazon.</p>
+                                      
+                                    </div>
+								</div>
+							</div>
+                            <div data-spollers class="main-spoller__item spoller-block__item">
+								<div  data-spoller-trigger class="spoller-block__button">
+									<div class="spoller-block__header">
+										<div class="spoller-block__body">
+											<div class="spoller-block__title">
+												<h3>How do I know if PPC is working?</h3>
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__arrow">
+										<picture><source srcset="img/icon/chevronBottom.webp" type="image/webp"><img loading="lazy"  src="img/icon/chevronBottom.png" alt="chevron bottom"></picture>
+									</div>
+								</div>
+								<div data-spollers-content class="spoller-block__content spoller-content">
+									<div class="spoller-content__text">
+                                        <p>If you want to find out how your ads are performing, you can check out our Amazon PPC audit tool and get  a free PPC audit report.</p>
+                                      
+                                    </div>
+								</div>
+							</div>
+                           
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+    <div class="footer__top footer-top">
+        <button  class="footer-top__button-top">
+            Back to top
+        </button>
+        
+    </div>
+    <div class="footer__container">
+        <div class="footer__body">
+            <div class="footer__item">
+                <div class="footer__logo">
+                    <picture>
+                        <source media="(min-width:991.98px )" srcset="img/logo/footer-logo.png" type="image/png">
+                        <img src="img/logo/footer-logo-mobile.png" alt="logo">
+                    </picture>
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="index.html" class="footer__link hover-line">Buy Account</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="sell-acount.html" class="footer__link hover-line">Sell account</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link hover-line">Services</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="blog.html" class="footer__link hover-line">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__item">
+                <div class="footer__element">
+                    <div class="footer__title">
+                        <h3>Email</h3>
+                    </div>
+                    <a href="mailto:support@amaz.markets" class="footer__email hover-line">support@amaz.markets</a>
+                </div>
+                <div class="footer__element">
+                    <div class="footer__title footer__title-fool">
+                        <h3>Follow Us:</h3>
+                    </div>
+                    <div class="footer__social footer-social">
+                        <ul class="footer-social__list">
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/facebook-logo.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/instagram-logo.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/linkedin-logo.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/telegram.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/youtube.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/twitter.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/reddit.svg" alt="social-icon">
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__element footer__element-form">
+                    <div class="footer__title">
+                        <h3>Contact Us:</h3>
+                    </div>
+                    <form action="#" class="footer__form footer-form">
+                        <input required name="email" class="footer-form__input" placeholder="Enter your email to stay updated" type="email">
+                        <button class="footer-form__button" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="footer__element">
+                    <div class="footer__social footer-social">
+                        <ul class="footer-social__list footer-social__list-cash">
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/icon/image3.2.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/icon/image3.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/icon/image4.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/icon/image5.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/icon/image6.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/icon/image7.svg" alt="social-icon">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <img src="img/footer/icon/8.svg" alt="social-icon">
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom footer-bottom">
+            <p>AmazMarket © 2020 - All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+		</div>
+		<script src="js/app.min.js?_v=20240310203716"></script>
+	</body>
+</html>
